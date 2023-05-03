@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Days to seconds converter</title>
+</head>
+<body bgcolor="beige">
+<h2>Days to seconds</h2>
+<input type="text" id="id1" placeholder="Enter amount of days"><br>
+<input type="submit" value="Compute" onclick="myFunction1()"><br>
+<p id="answer1"></p>
+<script>
+    function myFunction1() {
+        var num1 = document.getElementById('id1').value;
+        var num2 = 24;
+        var num3 = 60;
+        var num4 = 60;
+        var answer = Number(num1) * Number(num2) * Number(num3) * Number(num4); 
+        document.getElementById('answer1').innerHTML = "The result in seconds is " + answer;
+    }
+</script>
+</body>
+</html>
